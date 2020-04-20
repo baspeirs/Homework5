@@ -1,0 +1,21 @@
+.green {
+    background-color: green;
+}
+.time {
+    border-top: solid black;
+    border-right: solid black;
+    border-width: 2px;
+    border-bottom: black;
+}
+.submit {
+    background-color: blueviolet;
+}
+body {
+    margin: auto;
+}
+.row {
+    height: 100px;
+    margin-bottom: 2px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
