@@ -1,5 +1,11 @@
 .green {
-    background-color: green;
+    background-color: rgb(2, 197, 2);
+}
+.grey {
+    background-color: rgb(172, 172, 172);
+}
+.current {
+    background-color: rgb(148, 175, 255);
 }
 .time {
     border-top: solid black;

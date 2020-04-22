@@ -15,3 +15,31 @@
     // use military time for the script
     // use local time (probalby from browser) to grab the date and append it to the bottom of the header
 
+// lets grab the time to use and update with the hour by hour schedule. 
+// var date = new Date() ;
+// var time = date.getHours() + ':' + date.getMinutes();
+// console.log(time)
+// // now grab the full date and time (includes time zone, why not?)
+// var fullDate = Date($.now())
+// console.log(fullDate)
+
+// lets append fullDate to the bottom of the headder
+var day = moment().format('dddd, MMMM Do YYYY, h:mm a');
+$('#currentDay').append(day).value;
+// now create a variable to take the current hour and make it an integer
+var currentHour = parseInt(moment().format('H'))
+
+// now conditional statement to change the block colors
+// only two needed for each html id since green is standard for each
+// if in the past
+if (currentHour > 1) {
+    $('#midnight').toggleClass('grey')
+}
+// if current
+else if (currentHour === 0) {
+    $('#midnight').toggleClass('current')
+}
+
+if (currentHour === 23) {
+    $('#11pm').toggleClass('current')
+}
