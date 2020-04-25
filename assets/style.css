@@ -1,27 +1,35 @@
 .green {
     background-color: rgb(2, 197, 2);
+    border-style: outset;
+    padding: 4px;
 }
 .grey {
     background-color: rgb(172, 172, 172);
+    border-style: outset;
+    padding: 4px;
 }
 .current {
     background-color: rgb(148, 175, 255);
-}
-.time {
-    border-top: solid black;
-    border-right: solid black;
-    border-width: 2px;
-    border-bottom: black;
+    border-style: outset;
+    padding: 4px;
 }
 .submit {
-    background-color: blueviolet;
+    background-color: rgb(106, 133, 253);
+    font-family: 'Teko', sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    
 }
 body {
     margin: auto;
 }
 .row {
+    border-style: outset;
+    border-radius: 10px;
     height: 100px;
-    margin-bottom: 2px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 4px;
+}
+
+.col-8 {
+    resize: none;
 }
